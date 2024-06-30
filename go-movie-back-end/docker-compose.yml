@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
 
@@ -9,6 +9,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: movies
+      # POSTGRES_HOST_AUTH_METHOD: trust  # Desabilita a autenticação de senha
     logging:
       options:
         max-size: 10m
